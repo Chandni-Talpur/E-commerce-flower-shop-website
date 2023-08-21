@@ -1,0 +1,689 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --color:rgb(203, 5, 71);
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    margin-top: 4%;
+    padding: 1%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(247, 239, 239);
+}
+.heading span{
+    color: var(--color);
+}
+.btn{
+    color: white;
+    background-color: rgb(56, 55, 55);
+    border-radius: 15px;
+    padding: 9px;
+    font-size: .99rem;
+    text-decoration: none;
+    border: none;
+}
+.btn:hover{
+    background-color: var(--color);
+}
+
+/* HEADER SECION */
+.navigation{
+    display: flex;
+    align-items: center;
+    padding: 1% 0%;
+    justify-content: space-between;
+    box-shadow: 0.0rem .5rem rgba(0,0,0,.1);
+    z-index: 1000;
+    position: fixed;
+    top: 0%;
+    background-color: white;
+    width: 100%;
+}
+.mobile-navbar-btn{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.mobile-icon{
+    width: 2rem;
+    height: 2rem;
+    color: rgb(101, 101, 101);
+}
+.mobile-icon[name="close-outline"]{
+    display: none;
+}
+.navigation h1{
+    color: var(--color);
+    padding-left: 70px;
+    font-size: 2.2rem;
+    padding-bottom: 5px;
+}
+.navigation h1 span{
+    color: rgb(166, 94, 94);
+}
+.navigation .navbar{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.navigation .navbar li{
+    list-style: none;
+}
+.navigation .navbar a{ 
+    padding-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.navigation .navbar a:hover{
+    color:var(--color);
+}
+.navigation .navbar-class{
+    padding-top: 17px;
+    padding-right: 70px;
+}
+.navigation .navbar-class i{
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+.navigation .navbar-class i:hover{
+    color:var(--color);
+}
+
+/* HOME SECTION */
+.home{
+    margin-top: 1%;
+    padding: 18%;
+    background: url(floral-background-with-cherry-blossoms-in-full-bloom-on-a-pink-background-free-vector.jpg) no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.home h1{
+    font-size: 2.8rem;
+    padding-bottom: 1%;
+}
+.home span{
+    color: var(--color);
+    font-size: 1.8rem;
+}
+.home p{
+    color: rgb(44, 43, 43);
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+/* ABOUT SECTION */
+.about .about-container{
+    display: flex;
+    margin: 4%;
+}
+.about .about-container video{
+    width: 450px;
+    height: 250px;
+    box-shadow: .5rem 1rem rgba(0,0,0,.1);
+}
+.about .about-container .about-content{
+    margin-left: 2%;
+    padding-top: 4%;
+}
+.about .about-container .about-content h3{
+    padding-bottom: 2%;
+    font-size: 1.5rem;
+}
+.about .about-container .about-content h3 span{
+    color: var(--color);
+}
+.about .about-container .about-content p{
+    padding-bottom: 4%;
+    color: rgb(134, 28, 77);
+}
+
+/* SERVICES SECTION */
+.services{
+    margin-top: 5%;
+    background-color: rgb(247, 239, 239);
+    padding-top: 3%;
+}
+.services .services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.services .services-container .services-box{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1%;
+    margin: 1%;
+    background-color: white;
+}
+.services .services-container .services-box img{
+    width: 60px;
+    height: 60px;
+}
+.services .services-container .services-box .services-content{
+   padding-top: 7%;
+}
+.services .services-container .services-box .services-content span{
+    font-size: .8rem;
+}
+
+/* PRODUCTS SECTION */
+.products{
+    margin-bottom: 1%;
+}
+.products span{
+    color: var(--color);
+}
+.products .products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 5%;
+}
+.products .products-container .products-box{
+    padding: 2%;
+    border: .3rem solid rgba(0,0,0,.1);
+
+}
+.products .products-container .products-box .inside-box{
+    text-align: center;
+    margin-top: 5%;
+   
+}
+.products .products-container .products-box .inside-box .image img{
+    width: 100%;
+    height: 20rem;
+    
+}
+.products .products-container .products-box .inside-box .image{
+    position: relative;
+    width: 250px;
+}
+.products .products-container .products-box .inside-box:hover .image{
+  transform: scale(1.03); 
+}
+.products .products-container .products-box .inside-box .image .icons{
+    display: flex;
+    position: absolute;
+    bottom:2px; left:0; right:0;
+    background-color: rgb(242, 132, 150);
+    overflow: hidden; 
+    height: 10%;
+}
+.products .products-container .products-box .inside-box .image .icons a{
+    text-decoration: none;
+    color: #eee;
+    width: 100%;
+    height: 100%;
+    padding: 2.2%; 
+}
+.products .products-container .products-box .inside-box .image .icons .cart-btn{
+    border-left:  .3rem solid #555353;
+    border-right: .3rem solid #555353;
+    padding: 2.2%;
+    width:400px;
+    font-size: .8rem;
+    height: 100%;
+}
+.products .products-container .products-box .inside-box .image .icons a:hover{
+       background-color:#555353 ;
+}
+.products .products-container .products-box .inside-box .content h3{
+    font-size: 1.4rem;
+}
+
+/* TOP-PRODUCTS SECTION */
+.top-products-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+margin-top:8%;
+}
+.top-image1{
+    background: url(birthday1.webp)no-repeat center center/cover;
+    width: 250px;
+    height: 250px;
+}
+.top-image1:hover{
+    background: url(birthday2.jpg)no-repeat center center/cover;
+    cursor: pointer;
+}
+.top-image2{
+    background: url(customizebunch1.jpg)no-repeat center center/cover;
+    width: 250px;
+    height: 250px;
+}
+.top-image2:hover{
+    background: url(customizebunch2.jpg)no-repeat center center/cover;
+    cursor: pointer;
+}
+.top-image3{
+    background: url(black1.jpg)no-repeat center center/cover;
+    width: 250px;
+    height: 250px;
+}
+.top-image3:hover{
+    background: url(black2.jpg)no-repeat center center/cover;
+    cursor: pointer;
+}
+.top-image4{
+    background: url(redrose1.webp)no-repeat center center/cover;
+    width: 250px;
+    height: 250px;
+}
+.top-image4:hover{
+    background: url(redrose2.avif)no-repeat center center/cover;
+    cursor: pointer;
+}
+
+.top-content{
+    text-align: center;
+    margin-top: 4%;
+    color: var(--color);
+    font-weight: bold;
+}
+.top-products-box{
+    border: 2px solid rgb(216, 196, 205);
+    box-shadow: .3rem .3rem rgb(248, 214, 220);
+}
+.icons{
+    background-color: rgb(242, 132, 150);    
+}
+.icons a{
+   text-decoration: none;
+   color: #fdf8f8;
+   padding: 2% 28%;
+   height: 100%;
+   font-size: 1.1rem;
+   bottom: -1;
+}
+.icons a:hover{
+ color: #4a0e2c; 
+}
+
+
+/* FIXED-ATTACHMENT SECTION */
+.fixed-attachment{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background:linear-gradient(rgba(0, 0, 0, 0.18),rgba(0, 0, 0, 0.18)), url(cherry-blossom-tree-1225186_1280.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 28rem;
+}
+.fixed-attachment .attachment-box{
+  margin: 10%;
+  padding: 2%;
+  color: var(--color);
+  font-size: 1.4rem;
+  background-color: rgb(253, 232, 232);
+}
+.fixed-attachment .attachment-box .fixed-attachment-content{
+    font-weight: bold;
+    padding: 2%;
+    padding-left: 20%;
+    line-height: 30px;
+    
+}
+.fixed-attachment .attachment-box .fixed-attachment-content p{
+    font-size: 1.1rem;
+}
+.fixed-attachment .attachment-box h1{
+    padding-bottom: 3%;
+  }
+  .fixed-attachment .attachment-box h1 span{
+    color: var(--color);
+  }
+
+/* REVIEW SECTION */
+.review .review-container{
+    background-color: pink;
+    color: var(--color);
+    margin-top: 5%;
+    
+}
+.review .review-container .review-box{
+    display: flex;
+    background-color: #eee;
+    margin: 5%;
+    padding-right: 5%;
+}
+.review .review-container .review-content{
+    padding: 5% 5%;
+}
+.review .review-container .review-content i,.review .review-container .review-content h3
+{
+    padding-bottom: 2%;
+}
+.review .review-container .review-image{
+    width: 724px;
+    height: 200px;
+}
+.review .review-container .review-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+/* CONTACT SECTION */
+.contact .container{
+    margin: 4%;
+    display: flex;
+    background: url(home-background.jpg) no-repeat center center/cover;
+}
+.contact .container .form{
+    margin: 4% 8%;
+}
+.contact .container .form .label{
+    margin: 4%;
+    
+}
+.contact .container .form .label input{
+    padding: .5%;
+    width: 100%;
+    background-color: rgb(247, 239, 239);
+    border: 2px solid  rgb(206, 163, 177);;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--color);
+    
+}
+.contact .container .form input[type="submit"]{
+    width: 70%;
+    margin-left: 15%;
+}
+.contact .container .form .label textarea{
+    padding: .5%;
+    width: 100%;
+    background-color: rgb(247, 239, 239);
+    border: 2px solid rgb(206, 163, 177);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--color);
+}
+
+/* FOOTER */
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2% 0%;
+}
+.footer .container .box{
+    display: block;
+   width: 16%;
+   padding-left: 1%;
+   
+}
+.footer .container .box h3{
+    font-size: 1.3rem;
+    width: 100%;
+    color: var(--color);
+}
+.footer .container .box img{
+    width: 100%;
+}
+.footer .container .box li{
+    list-style: none;
+    padding-top: 8%;
+}
+.footer .container .box a{
+    color: #070707;
+    text-decoration: none;
+    
+}
+.footer .container .box a:hover{
+    color:var(--color);
+}
+.footer .content{
+    text-align: center;
+    padding: 2% 0%;
+    border-top: 10px solid rgba(0,0,0,.1);
+}
+.footer .content span{
+    color: var(--color);
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:990px){
+    .btn{
+   font-size: .8rem;     
+    }
+  .heading{
+    font-size: 1.8rem;
+  }
+    /* HEADER SECTION */
+    .navigation{
+        padding-top: 16px;
+        position: relative;
+    }
+    .navigation .navbar{
+        flex-direction: column;
+    }
+    .navigation h1{
+        color: var(--color);
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.8rem;
+    }
+    .navigation .navbar{
+        width: 100%;
+        height:100vh;
+        background-color:pink;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateZ(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .active .navbar{
+        transform: translateX(0%);
+        visibility: visible;
+        pointer-events: auto;
+        opacity: 1;
+    }
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        color: rgb(72, 71, 71);
+            }
+    .active .mobile-navbar-btn .mobile-icon[name="close-outline"]{
+        display: block;
+    }
+    .active .mobile-navbar-btn .mobile-icon[name="menu-outline"]{
+        display: none;
+    }
+   
+    .navigation .navbar a{
+        display: block;
+        font-size: 1.1rem;
+         padding: 20px;
+     }
+
+    .navigation .navbar-class{
+        padding-right: 20px;
+    }
+    .navigation .navbar-class i{
+        font-size: 1.2rem;
+    }
+
+   /* HOME SECTION */
+   .home{
+    padding-top: 15%;
+    text-align: center;
+}
+.home h1{
+    font-size: 2rem;
+    padding-bottom: 5%;
+    width: 100%;
+}
+.home span{
+    font-size: 1.2rem;
+    padding-bottom: 3%;
+}
+.home p{
+    font-size: .8rem;
+    padding-bottom: 4%;
+}
+/* ABOUT SECTION */
+.about .about-container{
+    flex-direction: column;
+    align-items: center;
+}
+.about .about-container video{
+    width: 250px;
+    height: 150px;
+}
+.about .about-container .about-content{
+    text-align: center;
+}
+
+.about .about-container .about-content h3{
+    font-size: 1.2rem;
+    padding-top: 4%;
+}
+.about .about-container .about-content p{
+    font-size: .9rem;
+    margin-bottom: 2%;
+}
+/* FIXED ATTACHMENT SECTION */
+.fixed-attachment .attachment-box{
+    padding-top: 15%;
+}
+.fixed-attachment .attachment-box .fixed-attachment-content{
+    padding-left: 5%;
+    font-size: .9rem;   
+}
+/* REVIEW SECTION */
+.review .review-container .review-box{
+    flex-direction: column;
+ }
+.review .review-container .review-content{
+    font-size: .8rem;
+}
+.review .review-container .review-image img{
+    width: 150px;
+    height: 150px;
+}
+/* REVIEW SECTION */
+.review .review-container .review-image{
+    padding-left: 40%;
+    padding-right: 40%;
+}
+}
+
+
+
+@media (max-width:700px){
+
+/* SERVICES SECTION */
+.services{
+    margin-top: 10%;
+}
+.services .services-container{
+    flex-direction: column;
+}
+.services .services-container .services-box{
+    width: 100%;
+    justify-content: start;
+}
+.services .services-container .services-box img{
+    width: 50px;
+    height: 50px;
+}
+.services .services-container .services-box .services-content{
+    font-size: .8rem;
+    padding-top: 5%;
+}
+
+/* FIXED-ATTACHMENT SECTION */
+.fixed-attachment .attachment-box{
+    font-size: 1rem;
+  }
+  .fixed-attachment .attachment-box h1{
+    padding-bottom: 10%;
+  }
+.fixed-attachment .attachment-box span{
+      font-weight: bold;
+      padding: 2%;
+  }
+
+/* CONTACT SECTION */
+.contact .container .form .label input{
+    font-size: .8rem;
+}
+.contact .container .form .label textarea{
+    font-size: .8rem;
+}
+
+/* FOOTER */
+.footer .container{
+   flex-direction: column;
+}
+.footer .container .box{
+   width: 100%;
+}
+.footer .container .box img{
+    width: 50%;
+}
+.footer .content{
+    font-size: .9rem;
+}
+
+.footer .container .box h3{
+    font-size: 1.1rem;
+}
+.footer .container .box li{
+    font-size: .91rem;
+}
+
+}
+
+@media (max-width:600px){
+     /* HOME SECTION */
+   .home{
+    padding-top: 25%;
+    height: 410px;
+}
+.home p{
+    padding-bottom: 8%;
+}
+/* REVIEW SECTION */
+.review .review-container .review-image{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+}
